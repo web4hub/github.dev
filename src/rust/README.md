@@ -19,6 +19,8 @@ See **[history](history)** for information on the contents of published images.
 
 ## Using this image
 
+### Release tags
+
 You can directly reference pre-built versions of `.devcontainer/Dockerfile` by using the `image` property in `.devcontainer/devcontainer.json` or updating the `FROM` statement in your own `Dockerfile` to the following. An example `Dockerfile` is included in this repository.
 
 - `mcr.microsoft.com/devcontainers/rust:latest` (or `trixie` `bookworm` to pin to an OS version)
@@ -26,7 +28,9 @@ You can directly reference pre-built versions of `.devcontainer/Dockerfile` by u
 
 Refer to [this guide](https://containers.dev/guide/dockerfile) for more details.
 
-You can decide how often you want updates by referencing a [semantic version](https://semver.org/) of each image. For example:
+We publish stable releases and experimental development images (`dev-*`, which contain the latest available changes from `main`). Latest stable: `mcr.microsoft.com/devcontainers/rust:latest` ([MCR](https://mcr.microsoft.com/en-us/artifact/mar/devcontainers/rust/tag/latest)). Other stable releases can be found at: [MCR Tags](https://mcr.microsoft.com/en-us/artifact/mar/devcontainers/rust/tags). Development images use the `dev-` prefix, for example `mcr.microsoft.com/devcontainers/rust:dev-1`, and may be updated in place; pin the image for reproducibility.
+
+The examples below demonstrate stable image [semantic versioning](https://semver.org/); see the links above for current tags.
 
 - `mcr.microsoft.com/devcontainers/rust:2-1` (or `2-1-trixie`, `2-1-bookworm` to pin to an OS version)
 - `mcr.microsoft.com/devcontainers/rust:2.1-1` (or `2.1-1-trixie`, `2.1-1-bookworm` to pin to an OS version)

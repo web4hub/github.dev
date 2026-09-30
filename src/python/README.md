@@ -19,9 +19,7 @@ See **[history](history)** for information on the contents of published images.
 
 ## Using this image
 
-### Configuration
-
-You can directly reference [pre-built](https://containers.dev/implementors/reference/#prebuilding) versions of this image by using the `image` property in `.devcontainer/devcontainer.json` or updating the `FROM` statement in your own `Dockerfile` with one of the following:
+### Release tags
 
 - `mcr.microsoft.com/devcontainers/python:3`    (latest)
 - `mcr.microsoft.com/devcontainers/python:3.10` (or `3.10-trixie`, `3.10-bookworm` to pin to an OS version)
@@ -30,9 +28,15 @@ You can directly reference [pre-built](https://containers.dev/implementors/refer
 - `mcr.microsoft.com/devcontainers/python:3.13` (or `3.13-trixie`, `3.13-bookworm` to pin to an OS version)
 - `mcr.microsoft.com/devcontainers/python:3.14` (or `3.14-trixie`, `3.14-bookworm` to pin to an OS version)
 
+#### Configuration
+
+You can directly reference [pre-built](https://containers.dev/implementors/reference/#prebuilding) versions of this image by using the `image` property in `.devcontainer/devcontainer.json` or updating the `FROM` statement in your own `Dockerfile` with one of the above.
+
 Refer to [this guide](https://containers.dev/guide/dockerfile) for more details.
 
-You can decide how often you want updates by referencing a [semantic version](https://semver.org/) of each image. For example:
+We publish stable releases and experimental development images (`dev-*`, which contain the latest available changes from `main`). Latest stable: `mcr.microsoft.com/devcontainers/python:latest` ([MCR](https://mcr.microsoft.com/en-us/artifact/mar/devcontainers/python/tag/latest)). Other stable releases can be found at: [MCR Tags](https://mcr.microsoft.com/en-us/artifact/mar/devcontainers/python/tags). Development images use the `dev-` prefix, for example `mcr.microsoft.com/devcontainers/python:dev-3.14`, and may be updated in place; pin the image for reproducibility.
+
+The examples below demonstrate stable image [semantic versioning](https://semver.org/); see the links above for current tags.
 
 - `mcr.microsoft.com/devcontainers/python:3-3.14` (or `3-3.14-trixie`)
 - `mcr.microsoft.com/devcontainers/python:3.2-3.14` (or `3.2-3.14-trixie`)
