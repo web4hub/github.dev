@@ -1,0 +1,4 @@
+git branch -m Abandoned-one crispy-enigma-qv4v9wx796jxc4wg9.github.dev
+git fetch origin
+git branch -u origin/crispy-enigma-qv4v9wx796jxc4wg9.github.dev crispy-enigma-qv4v9wx796jxc4wg9.github.dev
+git remote set-head origin -a
